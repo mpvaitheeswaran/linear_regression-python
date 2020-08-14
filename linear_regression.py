@@ -1,6 +1,6 @@
-import formula_for_linear_regression as f #this class is my custom class for my own formula functions.
+import formula_for_linear_regression as f #this module is my custom module for my own formula functions.
 x= [1,2,3,4,5]
-y= [2,4,5,4,5]
+y= [4,2,3,1,6]
 predicted_y=[]
 mean_of_x=f.find_mean(x)
 mean_of_y=f.find_mean(y)
@@ -13,6 +13,7 @@ m =f.find_m(x,mean_of_x,y,mean_of_y)
 #so,c=mean_of_y - m(mean_of_x)
 c =mean_of_y-(m*mean_of_x)
 for i in x:
+    #applying formula mx+c
     predicted_y.append((m*i)+c)
 #Printing the result.
 for i in range(len(x)):
